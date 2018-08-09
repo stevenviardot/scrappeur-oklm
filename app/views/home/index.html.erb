@@ -1,0 +1,16 @@
+<div class="dropdown">
+ <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Nom des crypto
+ </button>
+ <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+   <% @crypto.each do |c| %>
+   <ul>
+     <li>
+       <a href="">
+        <%= c.name %>
+        </a>
+     </li>
+   </ul>
+   <% end %>
+ </div>
+</div>
